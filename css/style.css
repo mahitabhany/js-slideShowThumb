@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    -webkit-transition: all 0.3 ease-in-out 0s;
+    transition: all 0.5 ease-in-out 0s;
+    background-color: dodgerblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#containerX
+{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slideShowX
+{
+    height: 60vh;
+    width: 80%;
+    background-image: url('../assets/bmw100.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#text1
+{
+    align-self:flex-end;
+    color:white;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#slideShowX a 
+{
+    font-size: 3em;
+    color:white;
+    text-shadow:3px 3px 5px black;
+    cursor: pointer;
+    width: 50px;
+}
+
+.prev
+{
+    padding-left: 30px;
+}
+
+.next
+{
+    padding-right: 30px;
+}
+
+.prev:hover
+{
+    padding-left:10px;
+    padding-right: 20px;
+}
+
+.next:hover
+{
+    padding-right:10px;
+    padding-left: 20px;
+}
+
+#thumbnailsX
+{
+    width: 80%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+}
+
+.item
+{
+    width: 25%;
+    background-image: url('../assets/bmw100.jpg');
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.selected
+{
+    opacity: 1;
+}
+
+#imgNum
+{
+    position: absolute;
+    top:15px;
+    left:10px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-size: 2em;
+}
